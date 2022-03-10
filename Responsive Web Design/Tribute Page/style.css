@@ -1,0 +1,46 @@
+#main {
+    background-color: #eee;
+    border-radius: 0.5%;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "title2"
+        "info"
+        "link";
+    justify-items: center;
+}
+
+#title {
+    grid-area: title;
+    text-align: center;
+}
+#img-div {
+    background-color: white;
+    border-radius: 1px;
+    grid-area: image;
+    text-align: center;
+    width: 99%;
+    padding: 10px 0px;
+    border-radius: 0.5%;
+}
+
+#image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#tribute-info {
+    grid-area: info;
+    max-width: 600px;
+    line-height: 30px;
+    text-align: left;
+}
+
+h2,
+h3 {
+    padding: 25px;
+    text-align: center;
+}
