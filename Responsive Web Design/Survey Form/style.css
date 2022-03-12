@@ -1,0 +1,75 @@
+body {
+  background: url("https://i.ibb.co/0m5LZct/Background.jpg") no-repeat center
+    fixed;
+  background-size: cover;
+  font-family: poppins, Calibri;
+  font-weight: 600;
+}
+
+#header {
+  text-align: center;
+  color: rgb(90, 255, 255);
+  font-size: larger;
+  line-height: 30px;
+  padding: 60px 0px 30px;
+}
+
+#form {
+  width: 30em;
+  margin: auto;
+  background-color: rgba(0, 255, 255, 0.75);
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 30px 50px 60px;
+}
+@media (max-width: 880px) {
+  #form {
+    width: 80%;
+  }
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: poppins, Calibri;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  width: 100%;
+  outline: none;
+  border-style: solid;
+  border-radius: 7px;
+  border-width: 1.8px;
+  border-color: gray;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  border-color: black;
+  border-width: 2.5px;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 200px;
+  height: 200px;
+  margin-top: 8px;
+}
+
+button {
+  background-color: #37af65;
+  color: white;
+}
