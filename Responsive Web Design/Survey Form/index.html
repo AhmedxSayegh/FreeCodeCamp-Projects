@@ -1,0 +1,89 @@
+<link rel='stylesheet' href='style.css'>
+<div id="header">
+  <h1 id="title">Programming</h1>
+  <p id="description"><strong>Survey About The Programming Community</strong></p>
+</div>
+<div id="form">
+  <form id="survey-form">
+    <div id="name-div">
+      <p>
+        <label id="name-label" for="name">Name</label><br />
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </p>
+    </div>
+    <div id="email-div">
+      <p>
+        <label id="email-label" for="email">Email</label><br />
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </p>
+    </div>
+    <div id="number-div">
+      <p>
+        <label id="number-label" for="number">Age (optional)</label><br />
+        <input type="number" id="number" name="number" min="4" max="130" placeholder="Age" />
+      </p>
+    </div>
+    <div id="dropdown-div">
+      <p>
+        Which option best describes your current role?
+        <select id="dropdown" name="role" required>
+          <option value="none" selected disabled>Select current role</option>
+          <option value="student">Student</option>
+          <option value="full_time_job">Full Time Job</option>
+          <option value="full_time_learner">Full Time Learner</option>
+          <option value="prefer_not_to_say">Prefer Not To Say</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+    </div>
+    <div id="recommendation-div">
+      <p>
+        Would you recommend programming as a profession or hobby to a friend?<br />
+        <input type="radio" id="definitely" value="definitely" name="recommendation" checked />
+        <label for="definitely">Definitely</label><br />
+        <input type="radio" id="maybe" value="maybe" name="recommendation" />
+        <label for="maybe">Maybe</label><br />
+        <input type="radio" id="not_sure" value="not_sure" name="recommendation" />
+        <label for="not_sure">Not Sure</label><br />
+        <input type="radio" id="no" value="no" name="recommendation" />
+        <label for="no">No</label>
+      </p>
+    </div>
+    <div id="language-div">
+      <p>
+        What languages do you excel at? (Check all that apply)<br />
+        <input type="checkbox" id="1" value="1" name="language" />
+        <label for="1">Javascript</label><br />
+        <input type="checkbox" id="2" value="2" name="language" />
+        <label for="2">Python</label><br />
+        <input type="checkbox" id="3" value="3" name="language" />
+        <label for="3">Java</label><br />
+        <input type="checkbox" id="4" value="4" name="language" />
+        <label for="4">C</label><br />
+        <input type="checkbox" id="5" value="5" name="language" />
+        <label for="5">C#</label><br />
+        <input type="checkbox" id="6" value="6" name="language" />
+        <label for="6">C++</label><br />
+        <input type="checkbox" id="7" value="7" name="language" />
+        <label for="7">Kotlin</label><br />
+        <input type="checkbox" id="8" value="8" name="language" />
+        <label for="8">Swift</label><br />
+        <input type="checkbox" id="9" value="9" name="language" />
+        <label for="9">Go</label><br />
+        <input type="checkbox" id="10" value="10" name="language" />
+        <label for="10">Rust</label><br />
+        <input type="checkbox" id="11" value="11" name="language" />
+        <label for="11">Ruby</label>
+      </p>
+    </div>
+    <div id="comments-div">
+      <p>
+        Any comments, suggestions or advices to give to programming beginners?
+        <textarea id="comments" name="comments" placeholder="Enter your comment here...."></textarea>
+      </p>
+    </div>
+    <div id="button-div">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </form>
+</div>
