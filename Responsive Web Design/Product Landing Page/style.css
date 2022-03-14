@@ -9,7 +9,7 @@
 
 body {
   background-color: var(--background);
-  font-family: Fredoka, sans-serif;
+  font-family: Fredoka, Calibri;
   font-size: large;
   display: flex;
   flex-direction: column;
