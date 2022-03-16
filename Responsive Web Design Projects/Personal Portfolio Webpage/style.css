@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+  --before: <;
+}
+
+html {
+  font-family: Fredoka, Calibri;
+  font-size: x-large;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: var(--main-white);
+}
+
+#navbar {
+  position: fixed;
+  background-color: var(--main-red);
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0.1em 0.01em black;
+}
+
+#nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+  margin-right: 1em;
+  padding: 1em;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: inherit;
+  padding: 1em;
+}
+
+.nav-link:hover {
+  background-color: var(--main-blue);
+}
+
+h1,
+h2 {
+  text-transform: capitalize;
+  line-height: 1.5em;
+}
+
+#welcome-section {
+  display: flex;
+  background-color: black;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  max-width: 75vw;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-blue);
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects-title {
+  margin: 2.5em;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 0.1em solid;
+}
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+  margin: 1em;
+}
+
+.project-tile {
+  color: inherit;
+  text-decoration: inherit;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-tile p {
+  background-color: var(--main-gray);
+  padding: 1em;
+  font-size: large;
+}
+
+.project-tile span {
+  color: transparent;
+}
+
+.project-tile:hover span {
+  color: orange;
+  transition: all 0.3s ease-in;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-gray);
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact h1 {
+  margin: 2em;
+}
+
+#links {
+  display: flex;
+  width: 75%;
+  max-width: 35em;
+  justify-content: space-around;
+}
+
+.link {
+  color: inherit;
+  text-decoration: inherit;
+  padding: 0.5em;
+  transition: all 0.3s ease-in;
+}
+
+.link:hover {
+  transform: translateY(0.25em);
+}
+
+@media (max-width: 950px) {
+  #projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
